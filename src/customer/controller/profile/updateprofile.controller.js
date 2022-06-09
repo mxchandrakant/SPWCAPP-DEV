@@ -6,8 +6,6 @@ const updateProfile = async(req,res) => {
     }catch(error){
         return res.status(400).send({ success:false,message:ecode.profile.SYSC0201.desc, error_code:ecode.profile.SYSC0201, data:{ error:error } })
     }
-
-    
 }
 
 module.exports = {
